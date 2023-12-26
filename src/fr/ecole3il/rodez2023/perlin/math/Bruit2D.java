@@ -7,14 +7,26 @@ package fr.ecole3il.rodez2023.perlin.math;
 public abstract class Bruit2D {
     
     /** La graine utilisée pour la génération du bruit */
-    private final long graine;
-    
+    private final long graine; // la graine sert à rendre le générateur aléatoire "deterministe" c'est donc un paramètre qu'on ne veut pas changer. Il est donc final.
+
+    /** On rajoute l'attribut resolution qui est un double */
+    private double resolution;
+
+    /** Accesseur et mutateur de l'attribut resolution */
+    public double getResolution(){
+        return resolution;
+    }
+    public void setResolution (double resolution){
+        this.resolution = resolution;
+    }
+
     /**
      * Constructeur de la classe Noise2D.
      * @param seed2 La graine utilisée pour initialiser le générateur de bruit.
      */
     public Bruit2D(long graine, double resolution) {
         this.graine = graine;
+        this.resolution = resolution;
     }
     
     /**

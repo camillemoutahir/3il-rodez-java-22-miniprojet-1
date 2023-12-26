@@ -42,17 +42,24 @@ public class Utils {
      * Mélange les éléments d'un tableau d'entiers en utilisant une graine spécifiée,
      * avec l'algorithme Fisher-Yates (ou Knuth Shuffle).
      * @param tab Le tableau à mélanger.
-     * @param seed La graine utilisée pour le mélange.
+     * @param graine La graine utilisée pour le mélange.
      * @return Un nouveau tableau contenant les éléments mélangés.
      * 
      * @author philibert roquart, fainéant
      */
-    public static int[] melanger(int[] tab, long seed) {
-        // Mélanger le tableau de permutation en utilisant 
-    	// ...
-    	// Bon, je le ferai plus tard, je vais réviser l'espagnol
-    	// Je mets ça, ça marchera bien en attendant
-    	// tant pis
+    public static int[] melanger(int[] tab, long graine) {
+        int j;
+        int valeur;
+        final int taille = tab.length;
+        Random random = new Random();
+        random.setSeed(graine);
+
+        for (int i = 0 ; i < taille ; i++){
+            j = random.nextInt(i + 1);
+            valeur = tab[i];
+            tab[i] = tab[j];
+            tab[j] = valeur;
+        }
         return tab;
     }
 
@@ -66,7 +73,7 @@ public class Utils {
      */
     public static double min(int width, int height) {
     	// pas le temps, j'ai mes exos de chimie à finir
-    	return 1;
+    	return width > height ? height : width;
     }
 
     /**
