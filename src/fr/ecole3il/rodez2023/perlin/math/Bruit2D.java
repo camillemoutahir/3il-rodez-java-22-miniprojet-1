@@ -44,5 +44,5 @@ public abstract class Bruit2D {
     public long getGraine() {
         return graine;
     }
-
+    
 }

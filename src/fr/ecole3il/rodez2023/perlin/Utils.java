@@ -11,7 +11,7 @@ import javax.imageio.ImageIO;
 
 /**
  * 
- * @author proussille
+ * @author
  * La classe Utils fournit des méthodes utilitaires pour diverses opérations génériques.
  * Elle offre des fonctionnalités telles que le chargement d'images, le mélange de tableaux, etc.
  */
@@ -45,7 +45,7 @@ public class Utils {
      * @param graine La graine utilisée pour le mélange.
      * @return Un nouveau tableau contenant les éléments mélangés.
      * 
-     * @author philibert roquart, fainéant
+     * @author
      */
     public static int[] melanger(int[] tab, long graine) {
         int j;
@@ -69,10 +69,9 @@ public class Utils {
      * @param height Le deuxième nombre.
      * @return Le plus petit des deux nombres.
      * 
-     * @author philibert roquart, fainéant
+     * @author 
      */
     public static double min(int width, int height) {
-    	// pas le temps, j'ai mes exos de chimie à finir
     	return width > height ? height : width;
     }
 
