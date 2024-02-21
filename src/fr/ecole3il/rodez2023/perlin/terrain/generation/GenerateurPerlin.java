@@ -4,7 +4,7 @@ import fr.ecole3il.rodez2023.perlin.terrain.elements.Terrain;
 import fr.ecole3il.rodez2023.perlin.math.BruitPerlin2D;
 
 public class GenerateurPerlin extends GenerateurCarte {
-    
+    /*Déclaration de 3 générateurs de bruit de Perlin */
     private BruitPerlin2D bruitPerlinHydrometrie;
     private BruitPerlin2D bruitPerlinTemperature;
     private BruitPerlin2D bruitPerlinAltitude;

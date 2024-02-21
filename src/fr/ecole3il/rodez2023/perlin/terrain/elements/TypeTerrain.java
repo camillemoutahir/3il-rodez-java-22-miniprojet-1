@@ -5,9 +5,11 @@ import java.awt.image.BufferedImage;
 import fr.ecole3il.rodez2023.perlin.Utils;
 
 public class TypeTerrain{
+    /*Déclaration des attributs */
     private String nom;
     private BufferedImage image;
 
+    
     public static final TypeTerrain OCEAN = new TypeTerrain("Océan", "ocean.png");
     public static final TypeTerrain PLAINE = new TypeTerrain("Plaine", "plain.png");
     public static final TypeTerrain FORET_FEUILLUS = new TypeTerrain("Forêt feuillus", "deciduous_forest.png");
@@ -23,11 +25,12 @@ public class TypeTerrain{
         this.nom=nom;
         this.image= Utils.chargerTuile(nomImage);
     }
-
+    /*Accesseur particulier renvoyant un élément de type BufferedImage et utilisant la fonction Utils.chargerTuile */
     public BufferedImage getImage(){
         return this.image;
     }
     @Override
+    /*Méthode qui convertit un TypeTerrain en chaîne de caractère */
     public String toString(){
         return this.nom;
     }

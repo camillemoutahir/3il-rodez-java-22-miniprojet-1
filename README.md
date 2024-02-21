@@ -147,6 +147,8 @@ On peut commencer directement par le code de la classe `Bruit2D`. C'est censé �
 
 **Question :** pourquoi l'attribut graine est-il en final ?
 
+La graine sert à rendre le générateur aléatoire "déterministe" c'est donc un paramètre qu'on ne veut pas changer. Il est donc final.
+
 Corrigez la classe en ajoutant l'attribut resolution qui manque, ainsi que l'accesseur et le mutateur.
 
 #### Faites du bruit, mais aléatoire
@@ -203,7 +205,10 @@ Voici les terrains que l'on souhaite pouvoir manipuler :
 
 On pourrait, par exemple, construire une classe pour chaque, qui hériterait de `Terrain`, comme classe mère.
 
-**Question :** Réaliser l'architecture que prendrait la forme d'une telle modélisation sous forme d'un diagramme UML. Quelle serait la différence d'attributs et de méthodes entre ces classes ? Expliquer, en s'appuyant sur un exercice vu en cours, pourquoi c'est une mauvaise idée. Quelle est la solution qu'il faudrait préférer (et que l'on va préférer) ?
+**Question :** Réaliser l'architecture que prendrait la forme d'une telle modélisation sous forme d'un diagramme UML. 
+Quelle serait la différence d'attributs et de méthodes entre ces classes ? 
+Expliquer, en s'appuyant sur un exercice vu en cours, pourquoi c'est une mauvaise idée. Quelle est la solution qu'il faudrait préférer (et que l'on va préférer) ?
+
 
 ### Modélisons le (type de) terrain
 
@@ -232,6 +237,8 @@ La plupart des jeux de type bac à sable utilisent trois valeurs pour générer 
 Créez la classe `Terrain` qui comportera trois accesseurs (un pour l'hydrométrie, un pour la température, et un pour l'altitude) - `getHydrometrie`, `getTemperature` et `getAltitude`. On veut pouvoir rentrer des informations décimales suffisamment précises (au moins en double précision).
 
 **Question :** quel type utilisez-vous ?
+
+On utilise le type "double".
 
 Pour des raisons de simplification, on **ne veut pas** que les valeurs de ces caractéristiques soient faites "à la louche". On s'assurera donc de les limiter : l'hydrométrie et la température doivent être comprises entre 0 et 1, l'altitude entre -1 et 1. On lèvera l'exception `MauvaiseValeurException` si une condition n'est pas respectée. L'exception en question héritera d'une exception **qui détermine qu'un argument est illégal**.
 

@@ -15,7 +15,7 @@ public class GenerateurAleatoire extends GenerateurCarte{
     public Terrain genererTerrain(int i, int j, int largeur, int hauteur){
         double hydrometrie = random.nextDouble();
         double temperature = random.nextDouble();
-        double altitude = random.nextDouble() *2 - 1;
+        double altitude = random.nextDouble();
         return new Terrain(hydrometrie, temperature, altitude);
     }
 }

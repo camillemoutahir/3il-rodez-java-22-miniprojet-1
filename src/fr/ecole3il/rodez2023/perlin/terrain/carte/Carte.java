@@ -6,6 +6,7 @@ import java.util.Scanner;
 import fr.ecole3il.rodez2023.perlin.terrain.generation.GenerateurCarte;
 
 public class Carte{
+    /*Déclaration des attributs */
     private String nom;
     private int largeur;
     private int hauteur;
@@ -22,6 +23,7 @@ public class Carte{
         return this.hauteur;
     }
     
+    /*Accesseur pour le terrain situé à [x][y] */
     public Terrain getTerrain(int x, int y) throws TerrainInexistant{
         if (x < 0 || x>= largeur || y<0 || y>= hauteur){
             throw new TerrainInexistant ("Terrain inexistant aux coordonnées [" + x +"][" + y + "]");

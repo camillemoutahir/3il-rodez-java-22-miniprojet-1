@@ -5,7 +5,7 @@ import fr.ecole3il.rodez2023.perlin.terrain.elements.Terrain;
 /**
  * Cette classe abstraite représente un générateur de carte utilisant la méthode Perlin
  * pour générer un tableau de terrains en fonction d'une graine.
- * @author proussille
+ * @author camille
  */
 public abstract class GenerateurCarte {
 

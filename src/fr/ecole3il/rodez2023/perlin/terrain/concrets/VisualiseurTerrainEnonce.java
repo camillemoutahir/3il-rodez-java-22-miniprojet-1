@@ -9,15 +9,16 @@ public class VisualiseurTerrainEnonce extends VisualiseurTerrain {
 		super(new DetermineurTerrainEnonce(), c);
 	}
 
+	/*Méthode getTypeTerrain */
 	@Override
 	public TypeTerrain getTypeTerrain(int x, int y) {
 		double altitude = carte.getTerrain(x, y).getAltitude();
 		double hydrometrie = carte.getTerrain(x, y).getHydrometrie();
 		double temperature = carte.getTerrain(x, y).getTemperature();
-
 		return determineurTerrain.determinerTerrain(altitude, hydrometrie, temperature);
 	}
 
+	/*Méthode getAltitudeAffichee */
 	@Override
 	public String getAltitudeAffichee(int x, int y) {
 		double altitude = carte.getTerrain(x, y).getAltitude();
@@ -32,6 +33,7 @@ public class VisualiseurTerrainEnonce extends VisualiseurTerrain {
 		}
 	}
 
+	/*Méthode getHydrometrieAffichee */
 	@Override
 	public String getHydrometrieAffichee(int x, int y) {
 		double hydrometrie = carte.getTerrain(x, y).getHydrometrie();
@@ -44,6 +46,7 @@ public class VisualiseurTerrainEnonce extends VisualiseurTerrain {
 		}
 	}
 
+	/*Méthode getTemperatureAffichee */
 	@Override
 	public String getTemperatureAffichee(int x, int y) {
 		double temperature = carte.getTerrain(x, y).getTemperature();

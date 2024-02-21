@@ -3,7 +3,7 @@ package fr.ecole3il.rodez2023.perlin.math;
 import fr.ecole3il.rodez2023.perlin.Utils;
 
 /**
- * @author philibert roquart, fainéant
+ * @author camille
  */
 public class BruitPerlin2D extends Bruit2D {
 
@@ -27,6 +27,7 @@ public class BruitPerlin2D extends Bruit2D {
 
 	private final int[] permutation;
 
+	/*Constructeur en modifiant la graine et en utilisant la fonction Utils.melanger */
 	public BruitPerlin2D(long graine, double resolution) {
 		super(graine, resolution);
 		this.permutation = Utils.melanger(PERMUTATION, graine);

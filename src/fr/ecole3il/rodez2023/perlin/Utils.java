@@ -11,7 +11,7 @@ import javax.imageio.ImageIO;
 
 /**
  * 
- * @author
+ * @author camille
  * La classe Utils fournit des méthodes utilitaires pour diverses opérations génériques.
  * Elle offre des fonctionnalités telles que le chargement d'images, le mélange de tableaux, etc.
  */
@@ -69,7 +69,7 @@ public class Utils {
      * @param height Le deuxième nombre.
      * @return Le plus petit des deux nombres.
      * 
-     * @author 
+     * @author camille
      */
     public static double min(int width, int height) {
     	return width > height ? height : width;
