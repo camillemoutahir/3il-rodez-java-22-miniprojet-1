@@ -4,7 +4,7 @@ import fr.ecole3il.rodez2023.perlin.terrain.elements.TypeTerrain;
 import fr.ecole3il.rodez2023.perlin.terrain.visualisation.DetermineurTerrain;
 
 public class DetermineurTerrainEnonce implements DetermineurTerrain {
-
+	/*Méthode permettant de déterminer le type de terrain en fonction de la valeur des paramètres */
 	@Override
 	public TypeTerrain determinerTerrain(double altitude, double hydrometrie, double temperature) {
 		if (altitude < 0) {

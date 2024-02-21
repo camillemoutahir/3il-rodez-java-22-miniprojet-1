@@ -5,11 +5,11 @@ import java.awt.image.BufferedImage;
 import fr.ecole3il.rodez2023.perlin.Utils;
 
 public class TypeTerrain{
-    /*Déclaration des attributs */
+    /* Déclaration des attributs */
     private String nom;
     private BufferedImage image;
 
-    
+    /* On instancie les différents types de terrain */
     public static final TypeTerrain OCEAN = new TypeTerrain("Océan", "ocean.png");
     public static final TypeTerrain PLAINE = new TypeTerrain("Plaine", "plain.png");
     public static final TypeTerrain FORET_FEUILLUS = new TypeTerrain("Forêt feuillus", "deciduous_forest.png");

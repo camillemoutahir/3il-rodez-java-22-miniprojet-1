@@ -11,7 +11,7 @@ import fr.ecole3il.rodez2023.perlin.terrain.elements.Terrain;
  * La classe ManipulateurCarte fournit des méthodes pour charger et enregistrer des cartes.
  * Elle permet de manipuler des objets Carte en utilisant des fichiers sur le disque.
  * 
- * @author proussille
+ * @author camille
  */
 public class ManipulateurCarte {
 

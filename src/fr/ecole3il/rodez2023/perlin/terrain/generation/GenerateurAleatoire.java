@@ -4,6 +4,7 @@ import java.util.Random;
 import fr.ecole3il.rodez2023.perlin.terrain.elements.Terrain;
 
 public class GenerateurAleatoire extends GenerateurCarte{
+    /*On utilise la classe Random pour générer aléatoirement les 3 caractéristiques de terrain */
     private Random random;
 
     public GenerateurAleatoire (long graine){

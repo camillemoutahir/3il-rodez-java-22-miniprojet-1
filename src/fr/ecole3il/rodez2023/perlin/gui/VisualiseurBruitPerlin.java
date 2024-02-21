@@ -18,7 +18,7 @@ import fr.ecole3il.rodez2023.perlin.math.BruitPerlin2D;
 
 /**
  * 
- * @author proussille
+ * @author camille
  * Classe représentant une fenêtre pour générer des images de bruit de Perlin.
  */
 public class VisualiseurBruitPerlin extends JFrame {
@@ -110,9 +110,8 @@ public class VisualiseurBruitPerlin extends JFrame {
         }
         
         BruitPerlin2D bruitPerlin2D = new BruitPerlin2D(seed, resolution);
-        ////////// CODE À MODIFIER 
         noiseImage = new ImageBruit(bruitPerlin2D);
-        ////////// FIN CODE À MODIFIER
+     
 
         tickImageButton.setEnabled(true); // Désactiver le bouton initialement
         tickImage();
